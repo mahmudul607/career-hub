@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+.title, .sub-title{
+    font-family: 'Manrope', sans-serif;
+   
+}
+.title{
+    font-size:xx-large;
+}
+.job_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    
+}

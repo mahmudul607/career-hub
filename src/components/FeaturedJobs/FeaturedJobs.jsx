@@ -8,22 +8,22 @@ const FeaturedJobs = () => {
     const [jobs, setJobs] = useState([]);
     const [showAll, setShowAll] = useState(false);
 
-    useEffect(() =>{
+    useEffect(() => {
         fetch('jobs.json')
-        .then(res => res.json())
-        .then(data => 
-            
-            { if(showAll){
-                setJobs(data);
-             }else{
-                setJobs(data.slice(2));
-             }}
-             
-            
+            .then(res => res.json())
+            .then(data => {
+                if (showAll) {
+                    setJobs(data);
+                } else {
+                    setJobs(data.slice(0, 4));
+                }
+            }
+
+
             );
-    },[showAll])
-    
- 
+    }, [showAll])
+
+
 
     return (
         <div className="text-center py-4">
@@ -33,11 +33,13 @@ const FeaturedJobs = () => {
                 {
                     jobs.map((job) => <Job key={job.id} job={job}></Job>)
                 }
-                
+
             </div>
-            <button className="btn btn-primary text-center" onClick={() => setShowAll(true)}>Show All Jobs</button>
-            
-            
+            <div className={showAll && 'hidden'}>
+                <button className="btn btn-primary text-center" onClick={() => setShowAll(true)}>Show All Jobs</button>
+            </div>
+
+
         </div>
     );
 };

@@ -1,0 +1,8 @@
+.banner_area{
+    height: 250px;
+    width: 100%;
+    background-image: url(../../assets/images/bg1.png);
+    background-repeat: no-repeat;
+   background-position: left center;
+   text-align: center;
+}

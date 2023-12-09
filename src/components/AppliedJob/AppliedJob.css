@@ -1,0 +1,11 @@
+.applied_job_container{
+    height: 200px;
+}
+.applied_job_container img{
+    height: 100%;
+    width: 50%;
+}
+.applied_job_container figure{
+    height: 100%;
+    width: 30%;
+}

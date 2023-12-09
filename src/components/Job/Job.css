@@ -1,0 +1,12 @@
+.logo img{
+    width: 200px;
+    height: 120px;
+}
+.card figure {
+    justify-content: start;
+    padding: 2%;
+}
+.icon{
+    font-size: 20px;
+    padding-right: 10px;
+}

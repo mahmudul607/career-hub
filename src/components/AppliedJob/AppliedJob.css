@@ -9,3 +9,11 @@
     height: 100%;
     width: 30%;
 }
+.applied_job_container .card-body {
+
+    flex-direction: row;
+   gap: 2rem;
+}
+.applied_job_container .card-actions{
+    align-items: center;
+}
